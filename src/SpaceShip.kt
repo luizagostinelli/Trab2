@@ -16,17 +16,17 @@ fun cannonX(ship: SpaceShip): Int {
     return ship.x + (SHIP_WIDTH - CANNON_WIDTH) / 2
 }
 
-/** Limita o X da nave para ela não sair da área. */
-fun limitX(x: Int, area: Area): Int {
-    if (x < 0) return 0
-    if (x > area.width - SHIP_WIDTH) return area.width - SHIP_WIDTH
+/** Limita o X do centro da nave para ela não sair da área. */
+fun limitX(x: Int): Int {
+    if (x < MIN_SHIP_X) return MIN_SHIP_X
+    if (x > MAX_SHIP_X) return MAX_SHIP_X
     return x
 }
 
 /** Move a nave para ficar centrada no X do rato, sem sair da área. */
-fun moveShip(ship: SpaceShip, mouseX: Int, area: Area): SpaceShip {
-    val newX = limitX(mouseX - SHIP_WIDTH / 2, area)
-    return ship.copy(x = newX)
+fun moveShip(ship: SpaceShip, mouseX: Int): SpaceShip {
+    val centerX = limitX(mouseX)
+    return ship.copy(x = centerX - MID_SHIP_X)
 }
 
 /** Dispara a partir do canhão, mas só se não existir já um projétil da nave. */

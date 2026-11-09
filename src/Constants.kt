@@ -25,4 +25,10 @@ const val ALIEN_SHOT_PROBABILITY = 50                  // % de sucesso da tentat
 const val MS_PER_SEC = 1000
 const val FRAMES_PER_SEC = 70
 const val FRAME_PERIOD = MS_PER_SEC / FRAMES_PER_SEC   // ~14 ms
-const val ALIEN_SHOT_PERIOD = 250                       // ms
+const val ALIEN_SHOT_PERIOD = 250
+
+
+// Movimentação da nave
+const val MID_SHIP_X = SHIP_WIDTH / 2
+const val MIN_SHIP_X = SHIP_WIDTH / 2
+const val MAX_SHIP_X = AREA_WIDTH - SHIP_WIDTH / 2
