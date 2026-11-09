@@ -18,8 +18,8 @@ const val FIRE_KEY = ' '
 const val SHOT_WIDTH = 4
 const val SHOT_HEIGHT = 7
 const val SHIP_SHOT_SPEED = 4
-val ALIEN_SHOT_SPEED = 1..4          // val, porque um intervalo não pode ser const
-const val ALIEN_SHOT_PROBABILITY = 0.5
+val ALIEN_SHOT_SPEED = 1..4        // val, porque um intervalo não pode ser const
+const val ALIEN_SHOT_PROBABILITY = 50                  // % de sucesso da tentativa de tiro dos aliens (valor entre 0 e 100)
 
 // Temporização
 const val MS_PER_SEC = 1000
