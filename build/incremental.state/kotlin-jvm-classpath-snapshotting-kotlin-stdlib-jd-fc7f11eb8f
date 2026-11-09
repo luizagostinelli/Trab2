@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.0/kotlin-stdlib-jdk8-1.8.0.jar"
+    ],
+    "inputFilesState": {
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.0/kotlin-stdlib-jdk8-1.8.0.jar": "size 968 mtime 2026-10-26T10:09:02.759828285Z mode 420 owner agostinelli_root group agostinelli_root"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/ic-cache/classpath-snapshots/kotlin-stdlib-jdk8-1.8.0.jar-fe1b698e2ba5d601b99f4262738fd70c0c24535ca6a560161f243ba8fc8b24a2.abi"
+    ],
+    "outputFilesState": {
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/ic-cache/classpath-snapshots/kotlin-stdlib-jdk8-1.8.0.jar-fe1b698e2ba5d601b99f4262738fd70c0c24535ca6a560161f243ba8fc8b24a2.abi": "size 4 mtime 2026-10-26T10:29:41.848531819Z mode 420 owner agostinelli_root group agostinelli_root"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

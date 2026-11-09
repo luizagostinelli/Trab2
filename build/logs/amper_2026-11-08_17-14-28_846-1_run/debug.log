@@ -1,0 +1,68 @@
+Kotlin Toolchain version 0.13.0 (abc7a5f, 2026-10-01)
+running on Linux 7.0.0-38-generic jvm arch amd64
+
+00:02.551 DEBUG                           MockProjectInitializer$DebugLogger Loaded text for file /home/agostinelli_root/ISEL/Progamação/Trab2/module.yaml
+00:03.150 DEBUG :Trab2:resolveDependenciesJvm ResolveExternalDependenciesTask$Companion resolve dependencies Trab2 -- main -- io.github.palex65:CanvasLib-jvm:1.0.2 org.jetbrains.kotlin:kotlin-stdlib:2.4.20 -- resolvePlatform=jvm nativeTarget=null wasmTarget=null
+00:03.216 DEBUG :Trab2:resolveDependenciesJvm IncrementalCache          [inc] 'Trab2:jvm:main' is up-to-date according to state file at '/home/agostinelli_root/ISEL/Progamação/Trab2/build/incremental.state/Trab2_jvm_main-97934d3537'
+00:03.260 DEBUG :Trab2:resolveDependenciesJvm ResolveExternalDependenciesTask$Companion resolve dependencies Trab2 -- main -- io.github.palex65:CanvasLib-jvm:1.0.2 org.jetbrains.kotlin:kotlin-stdlib:2.4.20 -- resolvePlatform=JVM nativeTarget=null
+wasmTarget=null
+https://repo1.maven.org/maven2 https://maven.google.com resolved to:
+  .m2.cache/io/github/palex65/CanvasLib-jvm/1.0.2/CanvasLib-jvm-1.0.2.jar
+  .m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.4.20/kotlin-stdlib-2.4.20.jar
+  .m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.0/kotlin-stdlib-jdk8-1.8.0.jar
+  .m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar
+  .m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.0/kotlin-stdlib-jdk7-1.8.0.jar
+00:03.264 DEBUG :Trab2:compileJvm         JvmCompileTask            compile Trab2 -- main
+00:03.333 DEBUG :Trab2:compileJvm         IncrementalCache          [inc] building ':Trab2:compileJvm'
+00:03.356 INFO  :Trab2:compileJvm         Slf4jExtensionsKt         Compiling module 'Trab2' for platform 'jvm'...
+00:03.361 DEBUG :Trab2:compileJvm         JvmCompileTask            Compiling Kotlin/JVM sources for module 'Trab2'...
+00:03.370 DEBUG :Trab2:compileJvm         IncrementalCache          [inc] 'resolve-org.jetbrains.kotlin-kotlin-build-tools-impl-2.4.20' is up-to-date according to state file at '/home/agostinelli_root/ISEL/Progamação/Trab2/build/incremental.state/resolve-org.jetbrains.kotlin-kotlin-build-tools-im-c158279dfa'
+00:03.432 DEBUG :Trab2:compileJvm         IncrementalCache          [inc] 'kotlin-jvm-classpath-snapshotting-CanvasLib-jvm-1.0.2.jar-54c763cffed5263eba7cf3b54bdf74ac1261ee0c0580cabda3970a8225c5ebc7' is up-to-date according to state file at '/home/agostinelli_root/ISEL/Progamação/Trab2/build/incremental.state/kotlin-jvm-classpath-snapshotting-CanvasLib-jvm-1.-fb3cf65b29'
+00:03.432 DEBUG :Trab2:compileJvm         IncrementalCache          [inc] 'kotlin-jvm-classpath-snapshotting-annotations-13.0.jar-587120705c68f13710d73bc9000b32135756885de7e405fb311e63dff59e4d5b' is up-to-date according to state file at '/home/agostinelli_root/ISEL/Progamação/Trab2/build/incremental.state/kotlin-jvm-classpath-snapshotting-annotations-13.0-58dd6619d5'
+00:03.432 DEBUG :Trab2:compileJvm         IncrementalCache          [inc] 'kotlin-jvm-classpath-snapshotting-kotlin-stdlib-jdk8-1.8.0.jar-fe1b698e2ba5d601b99f4262738fd70c0c24535ca6a560161f243ba8fc8b24a2' is up-to-date according to state file at '/home/agostinelli_root/ISEL/Progamação/Trab2/build/incremental.state/kotlin-jvm-classpath-snapshotting-kotlin-stdlib-jd-fc7f11eb8f'
+00:03.433 DEBUG :Trab2:compileJvm         IncrementalCache          [inc] 'kotlin-jvm-classpath-snapshotting-kotlin-stdlib-2.4.20.jar-25a4d8fb2d6ecaf2c9c721ec8e1fcfd80750b3787e1fd219f6a052bbd2d08127' is up-to-date according to state file at '/home/agostinelli_root/ISEL/Progamação/Trab2/build/incremental.state/kotlin-jvm-classpath-snapshotting-kotlin-stdlib-2.-50eda7e20c'
+00:03.433 DEBUG :Trab2:compileJvm         IncrementalCache          [inc] 'kotlin-jvm-classpath-snapshotting-kotlin-stdlib-jdk7-1.8.0.jar-d082886c394709ab19cea0b071a1b5d3071041e01d02d10d2b74b6ae74a0a849' is up-to-date according to state file at '/home/agostinelli_root/ISEL/Progamação/Trab2/build/incremental.state/kotlin-jvm-classpath-snapshotting-kotlin-stdlib-jd-20a49d6f5c'
+00:05.366 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Compiling using the in-process strategy
+00:05.577 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Kotlin compiler args: -classpath /home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/io/github/palex65/CanvasLib-jvm/1.0.2/CanvasLib-jvm-1.0.2.jar:/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.4.20/kotlin-stdlib-2.4.20.jar:/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.0/kotlin-stdlib-jdk8-1.8.0.jar:/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.0/kotlin-stdlib-jdk7-1.8.0.jar -d /home/agostinelli_root/ISEL/Progamação/Trab2/build/artifacts/CompiledJvmArtifact/Trab2jvm/kotlin-output -jdk-home /app/jbr -Xjdk-release=25 -module-name Trab2 -no-stdlib -Xenable-incremental-compilation
+00:05.585 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Source changes: ToBeComputed
+00:05.587 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Configuration inputs: ConfigurationInputs(icConfigurationInputsSnapshot={rootProjectDir=/home/agostinelli_root/ISEL/Progamação/Trab2, moduleBuildDir=/home/agostinelli_root/ISEL/Progamação/Trab2/build, outputDirs=null, useFirRunner=false, unsafeIncrementalCompilationForMultiplatform=false, monotonousIncrementalCompileSetExpansion=true, usePreciseJavaTracking=false, kotlinSourceFileExtensions=kt,kts, kotlinVersion=2.4.20}, compilerArgumentsInputsSnapshot=[-Xjdk-release=25, -classpath, -jdk-home, -module-name, -no-stdlib, /app/jbr, /home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/io/github/palex65/CanvasLib-jvm/1.0.2/CanvasLib-jvm-1.0.2.jar:/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.4.20/kotlin-stdlib-2.4.20.jar:/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.0/kotlin-stdlib-jdk8-1.8.0.jar:/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.0/kotlin-stdlib-jdk7-1.8.0.jar, Trab2])
+00:05.645 INFO  :Trab2:compileJvm         KotlinBuildToolsApiKt     Non-incremental compilation will be performed: Unknown inputs changes
+00:05.648 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Cleaning 2 output directories
+00:11.661 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     [KOTLIN] compile iteration: src/World.kt, src/Shot.kt, src/main.kt, src/Game.kt, src/Area.kt, src/Nave.kt
+00:11.661 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Compile iteration:
+00:11.662 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt       src/World.kt
+00:11.662 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt       src/Shot.kt
+00:11.662 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt       src/main.kt
+00:11.662 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt       src/Game.kt
+00:11.663 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt       src/Area.kt
+00:11.663 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt       src/Nave.kt
+00:11.665 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Using Kotlin home directory <no_path>
+00:11.666 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Exception on loading scripting plugin: java.lang.ClassNotFoundException: org.jetbrains.kotlin.scripting.compiler.plugin.ScriptingK2CompilerPluginRegistrar
+00:11.666 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Scripting plugin will not be loaded: not all required jars are present in the classpath (missing files: [./kotlin-scripting-compiler.jar, ./kotlin-scripting-compiler-impl.jar, ./kotlin-scripting-common.jar, ./kotlin-scripting-jvm.jar])
+00:11.666 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Configuring the compilation environment
+00:11.666 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Using JDK home directory /app/jbr
+00:11.666 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Loading modules: [java.se, jdk.accessibility, jdk.attach, jdk.compiler, jdk.dynalink, jdk.httpserver, jdk.javadoc, jdk.jdi, jdk.jfr, jdk.management, jdk.management.jfr, jdk.net, jdk.sctp, jdk.security.auth, jdk.security.jgss, jdk.unsupported, jdk.unsupported.desktop, jdk.xml.dom, java.base, java.compiler, java.datatransfer, java.desktop, java.xml, java.instrument, java.logging, java.management, java.management.rmi, java.rmi, java.naming, java.net.http, java.prefs, java.scripting, java.security.jgss, java.security.sasl, java.sql, java.transaction.xa, java.sql.rowset, java.xml.crypto, jdk.internal.jvmstat, jdk.internal.opt, jdk.zipfs, jdk.internal.md, jdk.jdwp.agent]
+00:11.667 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Output:
+/home/agostinelli_root/ISEL/Progamação/Trab2/build/artifacts/CompiledJvmArtifact/Trab2jvm/kotlin-output/World.class
+Sources:
+/home/agostinelli_root/ISEL/Progamação/Trab2/src/World.kt
+00:11.667 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Output:
+/home/agostinelli_root/ISEL/Progamação/Trab2/build/artifacts/CompiledJvmArtifact/Trab2jvm/kotlin-output/MainKt.class
+Sources:
+/home/agostinelli_root/ISEL/Progamação/Trab2/src/main.kt
+00:11.667 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     Output:
+/home/agostinelli_root/ISEL/Progamação/Trab2/build/artifacts/CompiledJvmArtifact/Trab2jvm/kotlin-output/META-INF/Trab2.kotlin_module
+Sources:
+/home/agostinelli_root/ISEL/Progamação/Trab2/src/Nave.kt
+/home/agostinelli_root/ISEL/Progamação/Trab2/src/Shot.kt
+/home/agostinelli_root/ISEL/Progamação/Trab2/src/World.kt
+/home/agostinelli_root/ISEL/Progamação/Trab2/src/main.kt
+/home/agostinelli_root/ISEL/Progamação/Trab2/src/Game.kt
+/home/agostinelli_root/ISEL/Progamação/Trab2/src/Area.kt
+00:11.884 DEBUG :Trab2:compileJvm         KotlinBuildToolsApiKt     [ClasspathSnapshot] Shrunk current classpath snapshot after compilation (shrink mode = NonIncremental), retained 5 / 868 classes
+00:11.987 INFO  :Trab2:compileJvm         MessagesKt                Compilation successful for 'Trab2' [jvm]
+00:12.007 DEBUG :Trab2:compileJvm         IncrementalCache          [inc] ':Trab2:compileJvm' changes: '/home/agostinelli_root/ISEL/Progamação/Trab2/build/artifacts/CompiledJvmArtifact/Trab2jvm/kotlin-output/META-INF/Trab2.kotlin_module' MODIFIED, '/home/agostinelli_root/ISEL/Progamação/Trab2/build/artifacts/CompiledJvmArtifact/Trab2jvm/kotlin-output/MainKt.class' MODIFIED, '/home/agostinelli_root/ISEL/Progamação/Trab2/build/artifacts/CompiledJvmArtifact/Trab2jvm/kotlin-output/World.class' MODIFIED
+00:12.023 DEBUG :Trab2:jarJvm             IncrementalCache          [inc] building ':Trab2:jarJvm'
+00:12.040 DEBUG :Trab2:jarJvm             IncrementalCache          [inc] ':Trab2:jarJvm' changes: '/home/agostinelli_root/ISEL/Progamação/Trab2/build/tasks/_Trab2_jarJvm/Trab2-jvm.jar' MODIFIED
+00:12.055 DEBUG :Trab2:runJvm             ProcessRunner             [cmd] /app/jbr/bin/java @/home/agostinelli_root/ISEL/Progamação/Trab2/build/temp/java-args-12352974695445002529.txt
+00:12.314 ERROR :Trab2:compileJvm         MainKt                    Task ':Trab2:runJvm' failed: Process failed with exit code 1

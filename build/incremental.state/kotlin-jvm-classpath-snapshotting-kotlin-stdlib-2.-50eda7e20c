@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.4.20/kotlin-stdlib-2.4.20.jar"
+    ],
+    "inputFilesState": {
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.4.20/kotlin-stdlib-2.4.20.jar": "size 1853314 mtime 2026-10-06T11:16:37.350435285Z mode 420 owner agostinelli_root group agostinelli_root"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/ic-cache/classpath-snapshots/kotlin-stdlib-2.4.20.jar-25a4d8fb2d6ecaf2c9c721ec8e1fcfd80750b3787e1fd219f6a052bbd2d08127.abi"
+    ],
+    "outputFilesState": {
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/ic-cache/classpath-snapshots/kotlin-stdlib-2.4.20.jar-25a4d8fb2d6ecaf2c9c721ec8e1fcfd80750b3787e1fd219f6a052bbd2d08127.abi": "size 273025 mtime 2026-10-26T10:29:43.190435987Z mode 420 owner agostinelli_root group agostinelli_root"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

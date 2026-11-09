@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar"
+    ],
+    "inputFilesState": {
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar": "size 17536 mtime 2026-09-29T10:32:38.814150459Z mode 420 owner agostinelli_root group agostinelli_root"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/ic-cache/classpath-snapshots/annotations-13.0.jar-587120705c68f13710d73bc9000b32135756885de7e405fb311e63dff59e4d5b.abi"
+    ],
+    "outputFilesState": {
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/ic-cache/classpath-snapshots/annotations-13.0.jar-587120705c68f13710d73bc9000b32135756885de7e405fb311e63dff59e4d5b.abi": "size 10404 mtime 2026-10-26T10:29:41.923526451Z mode 420 owner agostinelli_root group agostinelli_root"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

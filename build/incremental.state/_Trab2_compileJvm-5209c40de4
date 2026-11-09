@@ -1,0 +1,50 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "java.annotation.processor.generated.dir": "/home/agostinelli_root/ISEL/Progamação/Trab2/build/generated/Trab2/main/src/apt/java",
+        "jdk.home": "/app/jbr",
+        "jdk.version": "25.0.4.1",
+        "target.platforms": "JVM",
+        "task.output.root": "/home/agostinelli_root/ISEL/Progamação/Trab2/build/artifacts/CompiledJvmArtifact/Trab2jvm",
+        "user.settings": "{\"kotlin\":{\"compilerVersion\":\"2.4.20\",\"languageVersion\":null,\"apiVersion\":null,\"compileIncrementally\":true,\"allWarningsAsErrors\":false,\"suppressWarnings\":false,\"explicitApi\":\"Disable\",\"debug\":null,\"optimization\":null,\"verbose\":false,\"progressiveMode\":false,\"linkerOptions\":[],\"languageFeatures\":[],\"optIns\":[],\"storeJavaParameterNames\":false,\"freeCompilerArgs\":[],\"compilerPlugins\":[]},\"jvmRelease\":25,\"java\":{\"freeCompilerArgs\":[],\"annotationProcessorOptions\":{},\"compileIncrementally\":false}}"
+    },
+    "inputFiles": [
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/src",
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/resources",
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/io/github/palex65/CanvasLib-jvm/1.0.2/CanvasLib-jvm-1.0.2.jar",
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.4.20/kotlin-stdlib-2.4.20.jar",
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.0/kotlin-stdlib-jdk8-1.8.0.jar",
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar",
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.0/kotlin-stdlib-jdk7-1.8.0.jar"
+    ],
+    "inputFilesState": {
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/io/github/palex65/CanvasLib-jvm/1.0.2/CanvasLib-jvm-1.0.2.jar": "size 25718 mtime 2026-10-26T10:09:02.133740747Z mode 420 owner agostinelli_root group agostinelli_root",
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar": "size 17536 mtime 2026-09-29T10:32:38.814150459Z mode 420 owner agostinelli_root group agostinelli_root",
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.0/kotlin-stdlib-jdk7-1.8.0.jar": "size 963 mtime 2026-10-26T10:09:02.642811924Z mode 420 owner agostinelli_root group agostinelli_root",
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.0/kotlin-stdlib-jdk8-1.8.0.jar": "size 968 mtime 2026-10-26T10:09:02.759828285Z mode 420 owner agostinelli_root group agostinelli_root",
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.4.20/kotlin-stdlib-2.4.20.jar": "size 1853314 mtime 2026-10-06T11:16:37.350435285Z mode 420 owner agostinelli_root group agostinelli_root",
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/resources": "MISSING",
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/src/Area.kt": "size 25 mtime 2026-11-08T17:45:40.982Z",
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/src/Checklist.txt": "size 3132 mtime 2026-11-08T17:11:52.388Z",
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/src/Constants.kt": "size 602 mtime 2026-11-08T17:37:54.176Z",
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/src/Game.kt": "size 0 mtime 2026-11-08T17:11:31.91868403Z",
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/src/Nave.kt": "size 0 mtime 2026-11-08T17:12:51.140346428Z",
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/src/Shot.kt": "size 0 mtime 2026-11-08T17:12:15.432540843Z",
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/src/World.kt": "size 70 mtime 2026-10-26T10:00:33.962990258Z",
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/src/main.kt": "size 638 mtime 2026-11-08T17:46:17.157Z"
+    },
+    "outputValues": {
+        "jvmCompilerBuildProblems": "[]"
+    },
+    "outputFiles": [
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/artifacts/CompiledJvmArtifact/Trab2jvm/kotlin-output"
+    ],
+    "outputFilesState": {
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/artifacts/CompiledJvmArtifact/Trab2jvm/kotlin-output/ConstantsKt.class": "size 1221 mtime 2026-11-09T09:33:55.269654718Z",
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/artifacts/CompiledJvmArtifact/Trab2jvm/kotlin-output/META-INF/Trab2.kotlin_module": "size 49 mtime 2026-11-09T09:33:55.271934488Z",
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/artifacts/CompiledJvmArtifact/Trab2jvm/kotlin-output/MainKt.class": "size 3056 mtime 2026-11-09T09:33:55.270654718Z",
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/artifacts/CompiledJvmArtifact/Trab2jvm/kotlin-output/World.class": "size 742 mtime 2026-11-08T17:14:37.862709072Z"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

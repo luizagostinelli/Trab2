@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/io/github/palex65/CanvasLib-jvm/1.0.2/CanvasLib-jvm-1.0.2.jar"
+    ],
+    "inputFilesState": {
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/io/github/palex65/CanvasLib-jvm/1.0.2/CanvasLib-jvm-1.0.2.jar": "size 25718 mtime 2026-10-26T10:09:02.133740747Z mode 420 owner agostinelli_root group agostinelli_root"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/ic-cache/classpath-snapshots/CanvasLib-jvm-1.0.2.jar-54c763cffed5263eba7cf3b54bdf74ac1261ee0c0580cabda3970a8225c5ebc7.abi"
+    ],
+    "outputFilesState": {
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/ic-cache/classpath-snapshots/CanvasLib-jvm-1.0.2.jar-54c763cffed5263eba7cf3b54bdf74ac1261ee0c0580cabda3970a8225c5ebc7.abi": "size 1966 mtime 2026-10-26T10:29:41.999521011Z mode 420 owner agostinelli_root group agostinelli_root"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

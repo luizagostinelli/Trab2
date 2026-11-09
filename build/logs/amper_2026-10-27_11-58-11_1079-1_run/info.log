@@ -1,0 +1,7 @@
+Kotlin Toolchain version 0.13.0 (abc7a5f, 2026-10-01)
+running on Linux 7.0.0-38-generic jvm arch amd64
+
+00:03.577 INFO  :Trab2:compileJvm         Slf4jExtensionsKt         Compiling module 'Trab2' for platform 'jvm'...
+00:05.689 INFO  :Trab2:compileJvm         KotlinBuildToolsApiKt     Non-incremental compilation will be performed: Unknown inputs changes
+00:12.036 INFO  :Trab2:compileJvm         MessagesKt                Compilation successful for 'Trab2' [jvm]
+00:13.147 ERROR                           MainKt                    Task ':Trab2:runJvm' failed: Process failed with exit code 1

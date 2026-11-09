@@ -1,0 +1,8 @@
+Kotlin Toolchain version 0.13.0 (abc7a5f, 2026-10-01)
+running on Linux 7.0.0-38-generic jvm arch amd64
+
+00:03.148 INFO  :Trab2:compileJvm         Slf4jExtensionsKt         Compiling module 'Trab2' for platform 'jvm'...
+00:05.087 INFO  :Trab2:compileJvm         KotlinBuildToolsApiKt     Non-incremental compilation will be performed: Unknown inputs changes
+00:08.959 ERROR :Trab2:compileJvm         LoggingProblemReporter    /home/agostinelli_root/ISEL/Progamação/Trab2/src/main.kt:12:15: Unresolved reference 'drawLine' on receiver of type 'Arena'.
+00:08.963 ERROR :Trab2:compileJvm         KotlinBuildToolsApiKt     /home/agostinelli_root/ISEL/Progamação/Trab2/src/main.kt:12:15: Unresolved reference 'drawLine' on receiver of type 'Arena'.
+00:09.040 ERROR                           MainKt                    Task ':Trab2:compileJvm' failed: Kotlin compilation failed with 1 errors (see above)

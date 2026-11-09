@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Trab2-jvm">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/tasks/_Trab2_jarJvm/Trab2-jvm.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

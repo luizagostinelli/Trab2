@@ -1,0 +1,19 @@
+Kotlin Toolchain version 0.13.0 (abc7a5f, 2026-10-01)
+running on Linux 7.0.0-38-generic jvm arch amd64
+
+00:02.389 DEBUG                           MockProjectInitializer$DebugLogger Loaded text for file /home/agostinelli_root/ISEL/Progamação/Trab2/module.yaml
+00:02.993 DEBUG :Trab2:resolveDependenciesJvm ResolveExternalDependenciesTask$Companion resolve dependencies Trab2 -- main -- io.github.palex65:CanvasLib-jvm:1.0.2 org.jetbrains.kotlin:kotlin-stdlib:2.4.20 -- resolvePlatform=jvm nativeTarget=null wasmTarget=null
+00:03.065 DEBUG :Trab2:resolveDependenciesJvm IncrementalCache          [inc] 'Trab2:jvm:main' is up-to-date according to state file at '/home/agostinelli_root/ISEL/Progamação/Trab2/build/incremental.state/Trab2_jvm_main-97934d3537'
+00:03.103 DEBUG :Trab2:resolveDependenciesJvm ResolveExternalDependenciesTask$Companion resolve dependencies Trab2 -- main -- io.github.palex65:CanvasLib-jvm:1.0.2 org.jetbrains.kotlin:kotlin-stdlib:2.4.20 -- resolvePlatform=JVM nativeTarget=null
+wasmTarget=null
+https://repo1.maven.org/maven2 https://maven.google.com resolved to:
+  .m2.cache/io/github/palex65/CanvasLib-jvm/1.0.2/CanvasLib-jvm-1.0.2.jar
+  .m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.4.20/kotlin-stdlib-2.4.20.jar
+  .m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.0/kotlin-stdlib-jdk8-1.8.0.jar
+  .m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar
+  .m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.0/kotlin-stdlib-jdk7-1.8.0.jar
+00:03.107 DEBUG :Trab2:compileJvm         JvmCompileTask            compile Trab2 -- main
+00:03.180 DEBUG :Trab2:compileJvm         IncrementalCache          [inc] ':Trab2:compileJvm' is up-to-date according to state file at '/home/agostinelli_root/ISEL/Progamação/Trab2/build/incremental.state/_Trab2_compileJvm-5209c40de4'
+00:03.208 DEBUG :Trab2:jarJvm             IncrementalCache          [inc] ':Trab2:jarJvm' is up-to-date according to state file at '/home/agostinelli_root/ISEL/Progamação/Trab2/build/incremental.state/_Trab2_jarJvm-3635407f0e'
+00:03.229 DEBUG :Trab2:runJvm             ProcessRunner             [cmd] /app/jbr/bin/java @/home/agostinelli_root/ISEL/Progamação/Trab2/build/temp/java-args-12828884263070609559.txt
+00:03.517 ERROR                           MainKt                    Task ':Trab2:runJvm' failed: Process failed with exit code 1

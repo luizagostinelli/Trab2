@@ -1,0 +1,7 @@
+Kotlin Toolchain version 0.13.0 (abc7a5f, 2026-10-01)
+running on Linux 7.0.0-38-generic jvm arch amd64
+
+00:04.186 INFO  :Trab2:compileJvm         Slf4jExtensionsKt         Compiling module 'Trab2' for platform 'jvm'...
+00:10.903 ERROR :Trab2:compileJvm         LoggingProblemReporter    /home/agostinelli_root/ISEL/Progamação/Trab2/src/main.kt:19:8: Unresolved reference 'onFinish' on receiver of type 'Unit'.
+00:10.905 ERROR :Trab2:compileJvm         KotlinBuildToolsApiKt     /home/agostinelli_root/ISEL/Progamação/Trab2/src/main.kt:19:8: Unresolved reference 'onFinish' on receiver of type 'Unit'.
+00:10.986 ERROR                           MainKt                    Task ':Trab2:compileJvm' failed: Kotlin compilation failed with 1 errors (see above)

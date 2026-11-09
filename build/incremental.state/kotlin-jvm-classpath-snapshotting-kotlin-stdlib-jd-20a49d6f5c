@@ -1,0 +1,21 @@
+{
+    "codeVersion": "0.13.0",
+    "inputValues": {
+        "kotlinVersion": "2.4.20"
+    },
+    "inputFiles": [
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.0/kotlin-stdlib-jdk7-1.8.0.jar"
+    ],
+    "inputFilesState": {
+        "/home/agostinelli_root/.var/app/com.jetbrains.IntelliJ-IDEA-Community/cache/JetBrains/Kotlin/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.0/kotlin-stdlib-jdk7-1.8.0.jar": "size 963 mtime 2026-10-26T10:09:02.642811924Z mode 420 owner agostinelli_root group agostinelli_root"
+    },
+    "outputValues": {},
+    "outputFiles": [
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/ic-cache/classpath-snapshots/kotlin-stdlib-jdk7-1.8.0.jar-d082886c394709ab19cea0b071a1b5d3071041e01d02d10d2b74b6ae74a0a849.abi"
+    ],
+    "outputFilesState": {
+        "/home/agostinelli_root/ISEL/Progamação/Trab2/build/ic-cache/classpath-snapshots/kotlin-stdlib-jdk7-1.8.0.jar-d082886c394709ab19cea0b071a1b5d3071041e01d02d10d2b74b6ae74a0a849.abi": "size 4 mtime 2026-10-26T10:29:41.849531748Z mode 420 owner agostinelli_root group agostinelli_root"
+    },
+    "excludedOutputFiles": [],
+    "dynamicInputs": {}
+}

@@ -1,0 +1,4 @@
+Kotlin Toolchain version 0.13.0 (abc7a5f, 2026-10-01)
+running on Linux 7.0.0-38-generic jvm arch amd64
+
+00:03.570 ERROR                           MainKt                    Task ':Trab2:runJvm' failed: Process failed with exit code 1
