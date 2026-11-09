@@ -2,9 +2,15 @@
 
 import pt.isel.canvas.*
 
-data class SpaceShip(val x: Int, SHIP_BASE_Y, val shot: List<Shot>)
+data class SpaceShip(val x: Int, val shots: List<Shot> = emptyList())
 
-fun SpaceShip() {
-    val ship_base = Canvas.drawRect(x: Int, SHIP_BASE_Y,SHIP_WIDTH, SHIP_HEIGHT, GREEN)
-    val ship_cannon = Canvas.drawRect(x: Int, SHIP_CANNON_Y, CANNON_WIDTH, CANNON_HEIGHT, YELLOW)
+/** Desenha a nave e o seu projétil. */
+fun Canvas.drawShip(ship: SpaceShip) {
+    drawRect(ship.x, SHIP_BASE_Y, SHIP_WIDTH, SHIP_HEIGHT, GREEN)
+    drawRect(ship.cannonX(), SHIP_CANNON_Y, CANNON_WIDTH, CANNON_HEIGHT, YELLOW)
+    ship.shots.forEach { drawShot(it, WHITE) }
 }
+
+/** Cria a nave centrada na área, sem projéteis. */
+fun newShip(area: Area) = SpaceShip((area.width - SHIP_WIDTH) / 2)
+
