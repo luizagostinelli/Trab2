@@ -1,16 +1,46 @@
-// “Nave espacial do jogador: o seu estado, o movimento e o disparo”
+/** Nave do jogador: estado, movimento, disparo e desenho. */
 
 import pt.isel.canvas.*
 
-data class SpaceShip(val x: Int, val shots: List<Shot> = emptyList())
-
-/** Desenha a nave e o seu projétil. */
-fun Canvas.drawShip(ship: SpaceShip) {
-    drawRect(ship.x, SHIP_BASE_Y, SHIP_WIDTH, SHIP_HEIGHT, GREEN)
-    drawRect(ship.cannonX(), SHIP_CANNON_Y, CANNON_WIDTH, CANNON_HEIGHT, YELLOW)
-    ship.shots.forEach { drawShot(it, WHITE) }
-}
+/** Nave com a posição X do canto esquerdo e a lista de projéteis ativos. */
+data class SpaceShip(val x: Int, val shots: List<Shot>)
 
 /** Cria a nave centrada na área, sem projéteis. */
-fun newShip(area: Area) = SpaceShip((area.width - SHIP_WIDTH) / 2)
+fun newShip(area: Area): SpaceShip {
+    val x = (area.width - SHIP_WIDTH) / 2
+    return SpaceShip(x, emptyList())
+}
 
+/** Coordenada X do canhão, centrado sobre o retângulo verde da nave. */
+fun cannonX(ship: SpaceShip): Int {
+    return ship.x + (SHIP_WIDTH - CANNON_WIDTH) / 2
+}
+
+/** Limita o X da nave para ela não sair da área. */
+fun limitX(x: Int, area: Area): Int {
+    if (x < 0) return 0
+    if (x > area.width - SHIP_WIDTH) return area.width - SHIP_WIDTH
+    return x
+}
+
+/** Move a nave para ficar centrada no X do rato, sem sair da área. */
+fun moveShip(ship: SpaceShip, mouseX: Int, area: Area): SpaceShip {
+    val newX = limitX(mouseX - SHIP_WIDTH / 2, area)
+    return ship.copy(x = newX)
+}
+
+/** Dispara a partir do canhão, mas só se não existir já um projétil da nave. */
+fun fire(ship: SpaceShip): SpaceShip {
+    if (ship.shots.isNotEmpty()) return ship
+    val shot = Shot(cannonX(ship), SHIP_CANNON_Y - SHOT_HEIGHT, -SHIP_SHOT_SPEED)
+    return ship.copy(shots = listOf(shot))
+}
+
+/** Desenha a nave e o seu projétil. */
+fun drawShip(canvas: Canvas, ship: SpaceShip) {
+    canvas.drawRect(ship.x, SHIP_BASE_Y, SHIP_WIDTH, SHIP_HEIGHT, GREEN)
+    canvas.drawRect(cannonX(ship), SHIP_CANNON_Y, CANNON_WIDTH, CANNON_HEIGHT, YELLOW)
+    for (shot in ship.shots) {
+        drawShot(canvas, shot, WHITE)
+    }
+}
