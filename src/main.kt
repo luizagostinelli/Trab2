@@ -2,16 +2,27 @@
 
 import pt.isel.canvas.*
 
+// Representa as dimensões da área jogável do jogo.
+data class Area(val width: Int = AREA_WIDTH, val height: Int = AREA_HEIGHT)
+
 fun main() {
     onStart {
         val arena = Canvas(AREA_WIDTH, AREA_HEIGHT, BLACK)
-        var game = newGame(Area())
+        var game = Game()
 
-        arena.onMouseMove { me -> game = game.moveShip(me.x) }
+        arena.onMouseMove { me ->
+            game = game.moveShip(me.x)
+        }
 
-        arena.onMouseDown { game = game.fire() }
+        arena.onMouseDown {
+            game = game.fire()
+        }
 
-        arena.onKeyPressed { k -> if (k.char == FIRE_KEY) game = game.fire() }
+        arena.onKeyPressed { k ->
+            if (k.char == FIRE_KEY) {
+                game = game.fire()
+            }
+        }
 
         arena.onTimeProgress(FRAME_PERIOD) {
             game = game.next()
@@ -23,10 +34,6 @@ fun main() {
         }
     }
     onFinish {
-        println("Finish")
+        println("Jogo encerrado.")
     }
 }
-
-    data class Game(val gameArea: Area, val alienShot: List<Shot>, val spaceship: Spaceship, val over: Boolean)
-
-    fun newGame(area:Area): Game = TODO()
