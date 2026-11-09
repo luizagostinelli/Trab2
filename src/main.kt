@@ -27,9 +27,6 @@ fun main() {
     }
 }
 
-    data class Area(val width: Int, val height: Int)
-    data class Shot (val x: Int, val y: Int, val dy: Int)
-    data class SpaceShip(val x: Int, val y: Int, val shot: List<Shot>)
     data class Game(val gameArea: Area, val alienShot: List<Shot>, val spaceship: Spaceship, val over: Boolean)
 
     fun newGame(area:Area): Game = TODO()
