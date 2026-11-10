@@ -3,3 +3,18 @@
 /workspace.xml
 # Markdown personal settings
 /markdown.xml
+
+# IntelliJ (configuração pessoal de cada um)
+.idea/
+*.iml
+
+# Ficheiros gerados ao compilar
+build/
+out/
+.gradle/
+.kotlin/
+.amper/
+
+# Lixo do sistema operativo
+.DS_Store
+Thumbs.db

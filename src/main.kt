@@ -27,6 +27,9 @@ fun main() {
         arena.onTimeProgress(FRAME_PERIOD) {
             game = game.next()
             arena.drawGame(game)
+            if (game.over) {
+                arena.close()
+            }
         }
 
         arena.onTimeProgress(ALIEN_SHOT_PERIOD) {
@@ -34,6 +37,6 @@ fun main() {
         }
     }
     onFinish {
-        println("Jogo encerrado.")
+        println("Game Over.")
     }
 }
