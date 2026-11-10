@@ -2,7 +2,7 @@
 
 import pt.isel.canvas.*
 
-data class ShipShot(val x: Int, val y: Int)
+data class ShipShot(val x: Int, val y: Int, val speed: Int)
 data class AlienShot(val x: Int, val y: Int, val speed_alien: Int)
 
 // Tiro dos aliens

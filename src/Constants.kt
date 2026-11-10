@@ -29,6 +29,6 @@ const val ALIEN_SHOT_PERIOD = 250
 
 
 // Movimentação da nave
-const val MID_SHIP_X = SHIP_WIDTH / 2 // 25
+const val MID_SHIP = SHIP_WIDTH / 2 // 25
 const val MIN_SHIP_X = SHIP_WIDTH / 2
 const val MAX_SHIP_X = AREA_WIDTH - SHIP_WIDTH / 2  // 675

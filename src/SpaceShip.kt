@@ -26,13 +26,13 @@ fun limitX(x: Int): Int {
 /** Move a nave para ficar centrada no X do rato, sem sair da área. */
 fun moveShip(ship: SpaceShip, mouseX: Int): SpaceShip {
     val centerX = limitX(mouseX)
-    return ship.copy(x = centerX - MID_SHIP_X)
+    return ship.copy(x = centerX - MID_SHIP)
 }
 
 /** Dispara a partir do canhão, mas só se não existir já um projétil da nave. */
 fun fire(ship: SpaceShip): SpaceShip {
     if (ship.shots.isNotEmpty()) return ship
-    val shot = Shot(cannonX(ship), SHIP_CANNON_Y - SHOT_HEIGHT, -SHIP_SHOT_SPEED)
+    val shot = ShipShot(cannonX(ship), SHIP_CANNON_Y - SHOT_HEIGHT, -SHIP_SHOT_SPEED)
     return ship.copy(shots = listOf(shot))
 }
 
