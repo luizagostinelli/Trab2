@@ -1,26 +1,31 @@
-// Representa um projétil do jogo e a sua movimentação no ecrã.
+/** Tiro (da nave ou dos aliens): posição, tamanho e velocidade vertical. */
 
 import pt.isel.canvas.*
 
-data class ShipShot(val x: Int, val y: Int, val speed: Int)
-data class AlienShot(val x: Int, val y: Int, val speed_alien: Int)
+/** Canto superior esquerdo (x, y); speed > 0 desce, speed < 0 sobe. */
+data class Shot(
+    val x: Int,
+    val y: Int,
+    val width: Int = SHOT_WIDTH,
+    val height: Int = SHOT_HEIGHT,
+    val speed: Int
+)
 
-// Tiro dos aliens
-
-fun createAlienShot(areaWidth: Int): AlienShot {
-    val randomX = (0 until areaWidth).random()
-    val randomSpeed = ALIEN_SHOT_SPEED.random() // Sortear o valor explicitamente aqui!
-    return AlienShot(x = randomX, y = 0, speed_alien = randomSpeed)
+/** Desenha um tiro como um retângulo com a cor dada. */
+fun drawShot(canvas: Canvas, shot: Shot, color: Int) {
+    canvas.drawRect(shot.x, shot.y, shot.width, shot.height, color)
 }
 
-// Tiro da nave
-/** Move o projétil de acordo com a sua velocidade. */
-fun Shot.move(): Shot = copy(pos = Position(pos.x, pos.y - SHIP_SHOT_SPEED))
-
-/** Verifica se o projétil saiu da área de jogo. */
-fun Shot.isOutOfBounds(areaHeight: Int): Boolean = pos.y + SHOT_HEIGHT < 0 || pos.y > areaHeight
-
-/** Desenha o projétil com a cor especificada. */
-fun Shot.draw(canvas: Canvas, color: Int) {
-    canvas.drawRect(pos.x, pos.y, SHOT_WIDTH, SHOT_HEIGHT, RED)
+/** Cria um tiro de alien numa posição X aleatória, no topo da área. */
+fun createAlienShot(areaWidth: Int): Shot {
+    val randomX = (0 until areaWidth - SHOT_WIDTH).random()
+    val randomSpeed = ALIEN_SHOT_SPEED.random()
+    return Shot(x = randomX, y = 0, speed = randomSpeed)
 }
+
+/** Move o tiro na vertical de acordo com a sua velocidade. */
+fun Shot.move(): Shot = copy(y = y + speed)
+
+/** Verifica se o tiro saiu da área de jogo. */
+fun Shot.isOutOfBounds(areaHeight: Int): Boolean =
+    y + height < 0 || y > areaHeight

@@ -8,7 +8,7 @@ data class Area(val width: Int = AREA_WIDTH, val height: Int = AREA_HEIGHT)
 fun main() {
     onStart {
         val arena = Canvas(AREA_WIDTH, AREA_HEIGHT, BLACK)
-        var game = Game()
+        var game = newGame(Area())
 
         arena.onMouseMove { me ->
             game = game.moveShip(me.x)

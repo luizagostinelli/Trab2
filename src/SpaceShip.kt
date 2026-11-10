@@ -32,7 +32,7 @@ fun moveShip(ship: SpaceShip, mouseX: Int): SpaceShip {
 /** Dispara a partir do canhão, mas só se não existir já um projétil da nave. */
 fun fire(ship: SpaceShip): SpaceShip {
     if (ship.shots.isNotEmpty()) return ship
-    val shot = Shot(cannonX(ship), SHIP_CANNON_Y - SHOT_HEIGHT, -SHIP_SHOT_SPEED)
+    val shot = Shot(x = cannonX(ship), y = SHIP_CANNON_Y - SHOT_HEIGHT, speed = -SHIP_SHOT_SPEED)
     return ship.copy(shots = listOf(shot))
 }
 

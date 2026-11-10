@@ -17,7 +17,7 @@ fun newGame(area: Area): Game =
 
 /** Move a nave para o X do rato. */
 fun Game.moveShip(mouseX: Int): Game =
-    copy(ship = moveShip(ship, mouseX, area))
+    copy(ship = moveShip(ship, mouseX))
 
 /** A nave dispara. */
 fun Game.fire(): Game =
