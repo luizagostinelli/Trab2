@@ -18,7 +18,7 @@ fun drawShot(canvas: Canvas, shot: Shot, color: Int) {
 
 /** Cria um tiro de alien numa posição X aleatória, no topo da área. */
 fun createAlienShot(areaWidth: Int): Shot {
-    val randomX = (0 until areaWidth - SHOT_WIDTH).random()
+    val randomX = (0 until areaWidth).random()
     val randomSpeed = ALIEN_SHOT_SPEED.random()
     return Shot(x = randomX, y = 0, speed = randomSpeed)
 }
