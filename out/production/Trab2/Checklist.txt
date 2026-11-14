@@ -1,0 +1,79 @@
+1. Regras gerais (valem para tudo)
+ Só uma variável var em todo o programa, do tipo Game
+ Todo o resto imutável (val, data class, listas imutáveis, funções que devolvem novas cópias)
+ Sem código repetido
+ Funções curtas
+ Sem “valores mágicos”: tudo em constantes com nome (const val)
+ Código indentado e comentado
+ Cada ficheiro .kt com um comentário inicial de uma só frase a descrever a sua responsabilidade
+
+2. Estrutura de ficheiros  OK
+ Game.kt (estado do jogo e lógica geral)
+ SpaceShip.kt (nave)
+ Shot.kt (projéteis)
+ Area.kt (área de jogo)
+ Ficheiro com main (ligação ao canvas, eventos e temporizador)
+ Ficheiro de constantes (opcional, mas ajuda a evitar valores mágicos)
+
+3. Tipos de dados
+ Area (largura 700, altura 500)
+ Shot (posição x, y e velocidade; e se é da nave ou dos aliens)
+ SpaceShip (posição x, linha base Y = 450, e o disparo atual, se existir)
+ Game(area, alienShots, ship, over), com possibilidade de acrescentar o disparo da nave
+
+4. Constantes a definir
+ Área: 700 x 500
+ Nave: retângulo verde 50 x 10; retângulo amarelo 4 x 5
+ Linha base da nave: Y = 450
+ Projétil: 4 x 7 (vermelho = aliens, branco = nave)
+ Velocidade do projétil da nave: 4 px/frame
+ Velocidade dos projéteis dos aliens: 1 a 4 px/frame
+ Frames: ~70 por segundo
+ Intervalo de tentativa de disparo: 250 ms
+ Probabilidade de disparo: 50%
+ Posição X do disparo aleatória: 0 a 699
+
+5. Desenho (canvas)
+ Limpar o ecrã a cada frame (fundo preto)
+ Desenhar a nave (verde + amarelo, o amarelo como “canhão” no topo)
+ Desenhar projéteis dos aliens (vermelhos)
+ Desenhar o projétil da nave (branco), se existir
+
+6. Nave
+ Seguir a coordenada X do rato
+ Não sair dos limites da área (restringir X, tendo em conta a largura de 50)
+ Manter sempre Y = 450
+
+7. Disparo da nave
+ Disparar com click do rato
+ Disparar com barra de espaços
+ Só disparar se não existir já um projétil da nave
+ O projétil parte da posição do canhão da nave
+ Move-se para cima a 4 px/frame
+ Desaparece ao sair da área
+
+8. Disparos dos aliens
+ A cada 250 ms, tentar criar disparo (50% de hipótese)
+ Se tiver sucesso: X aleatório (0 a 699) e velocidade aleatória (1 a 4)
+ Surge no topo (Y = 0)
+ Desce à sua velocidade a cada frame
+ Desaparece ao sair da área
+
+9. Colisões e fim de jogo
+ Função genérica de colisão entre retângulos (reutilizável)
+ Projétil de alien atinge o retângulo verde da nave → over = true
+ Projétil da nave atinge um projétil de alien → ambos desaparecem
+ Com over = true, o jogo deixa de atualizar
+
+10. Ciclo do jogo (único ponto de mutabilidade)
+ var game = Game(...) inicial
+ Evento de rato (mover) → game = moveShip(game, x)
+ Evento de click/barra de espaços → game = shoot(game)
+ Temporizador de frame (~14 ms) → game = step(game) (mover projéteis, remover os que saíram, colisões)
+ Temporizador de 250 ms → game = tryAlienShot(game)
+ 
+11. Antes de entregar
+ Testar com o game.jar do professor para comparar o comportamento
+ Confirmar que só existe um var no projeto todo
+ Procurar números soltos no código (700, 450, 4...)
+ Rever comentários e indentação
