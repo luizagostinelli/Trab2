@@ -37,6 +37,6 @@ fun main() {
         }
     }
     onFinish {
-        println("Game Over.")
+        println("Game Over  .")
     }
 }
