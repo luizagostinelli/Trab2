@@ -46,9 +46,7 @@ fun Shot.hitsShip(ship: SpaceShip): Boolean =
 
 /** Move uma lista de tiros e remove os que saíram da área. */
 fun moveShots(shots: List<Shot>, areaHeight: Int): List<Shot> =
-    shots
-        .map { shot -> shot.move() }
-        .filter { shot -> !shot.isOutOfBounds(areaHeight) }
+    shots.map { shot -> shot.move() }.filter { shot -> !shot.isOutOfBounds(areaHeight) }
 
 /** Remove os tiros de 'shots' que acertam em algum tiro de 'others'. */
 fun removeHit(shots: List<Shot>, others: List<Shot>): List<Shot> =
