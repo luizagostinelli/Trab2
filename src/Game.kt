@@ -33,6 +33,15 @@ fun Canvas.drawGame(game: Game) {
     }
 }
 
+
+/** Tenta criar um tiro dos aliens, com a probabilidade definida. */
+fun Game.tryAlienShot(): Game {
+    if (over) return this
+    if ((1..100).random() > ALIEN_SHOT_PROBABILITY) return this
+    return copy(alienShots = alienShots + createAlienShot(area.width))
+}
+
+
 /** Avança o jogo um passo: move os tiros e remove os que saíram da área. */
 /** Avança o jogo um passo: move tiros, trata colisões e deteta o fim do jogo. */
 fun Game.next(): Game {
@@ -45,11 +54,4 @@ fun Game.next(): Game {
         ship = ship.copy(shots = removeHit(movedShipShots, movedAlienShots)),
         over = shipHit
     )
-}
-
-/** Tenta criar um tiro dos aliens, com a probabilidade definida. */
-fun Game.tryAlienShot(): Game {
-    if (over) return this
-    if ((1..100).random() > ALIEN_SHOT_PROBABILITY) return this
-    return copy(alienShots = alienShots + createAlienShot(area.width))
 }

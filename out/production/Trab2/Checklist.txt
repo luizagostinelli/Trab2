@@ -15,13 +15,13 @@
  Ficheiro com main (ligação ao canvas, eventos e temporizador)
  Ficheiro de constantes (opcional, mas ajuda a evitar valores mágicos)
 
-3. Tipos de dados
+3. Tipos de dados OK
  Area (largura 700, altura 500)
  Shot (posição x, y e velocidade; e se é da nave ou dos aliens)
  SpaceShip (posição x, linha base Y = 450, e o disparo atual, se existir)
  Game(area, alienShots, ship, over), com possibilidade de acrescentar o disparo da nave
 
-4. Constantes a definir
+4. Constantes a definir OK
  Área: 700 x 500
  Nave: retângulo verde 50 x 10; retângulo amarelo 4 x 5
  Linha base da nave: Y = 450
@@ -33,18 +33,18 @@
  Probabilidade de disparo: 50%
  Posição X do disparo aleatória: 0 a 699
 
-5. Desenho (canvas)
+5. Desenho (canvas) OK
  Limpar o ecrã a cada frame (fundo preto)
  Desenhar a nave (verde + amarelo, o amarelo como “canhão” no topo)
  Desenhar projéteis dos aliens (vermelhos)
  Desenhar o projétil da nave (branco), se existir
 
-6. Nave
+6. Nave OK
  Seguir a coordenada X do rato
  Não sair dos limites da área (restringir X, tendo em conta a largura de 50)
  Manter sempre Y = 450
 
-7. Disparo da nave
+7. Disparo da nave OK
  Disparar com click do rato
  Disparar com barra de espaços
  Só disparar se não existir já um projétil da nave
@@ -52,27 +52,27 @@
  Move-se para cima a 4 px/frame
  Desaparece ao sair da área
 
-8. Disparos dos aliens
+8. Disparos dos aliens OK
  A cada 250 ms, tentar criar disparo (50% de hipótese)
  Se tiver sucesso: X aleatório (0 a 699) e velocidade aleatória (1 a 4)
  Surge no topo (Y = 0)
  Desce à sua velocidade a cada frame
  Desaparece ao sair da área
 
-9. Colisões e fim de jogo
+9. Colisões e fim de jogo OK
  Função genérica de colisão entre retângulos (reutilizável)
  Projétil de alien atinge o retângulo verde da nave → over = true
  Projétil da nave atinge um projétil de alien → ambos desaparecem
  Com over = true, o jogo deixa de atualizar
 
-10. Ciclo do jogo (único ponto de mutabilidade)
+10. Ciclo do jogo (único ponto de mutabilidade) OK
  var game = Game(...) inicial
  Evento de rato (mover) → game = moveShip(game, x)
  Evento de click/barra de espaços → game = shoot(game)
  Temporizador de frame (~14 ms) → game = step(game) (mover projéteis, remover os que saíram, colisões)
  Temporizador de 250 ms → game = tryAlienShot(game)
  
-11. Antes de entregar
+11. Antes de entregar OK
  Testar com o game.jar do professor para comparar o comportamento
  Confirmar que só existe um var no projeto todo
  Procurar números soltos no código (700, 450, 4...)
