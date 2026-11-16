@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
     <orderEntry type="library" exported="" name="game (2)" level="project" />
+    <orderEntry type="library" name="io.github.palex65.CanvasLib.jvm" level="project" />
   </component>
 </module>

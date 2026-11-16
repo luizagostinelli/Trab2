@@ -1,3 +1,9 @@
+
+
+
+
+
+
 //Ponto de entrada do jogo, que liga o canvas, os eventos e os temporizadores ao estado do jogo.
 
 import pt.isel.canvas.*
