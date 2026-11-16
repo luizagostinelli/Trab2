@@ -2,6 +2,9 @@
 
 import pt.isel.canvas.*
 
+private const val SHOT_WIDTH = 4
+private val ALIEN_SHOT_SPEED = 1..4
+
 /** Canto superior esquerdo (x, y); speed > 0 desce, speed < 0 sobe. */
 data class Shot(
     val x: Int,
@@ -24,19 +27,19 @@ fun createAlienShot(areaWidth: Int): Shot {
 }
 
 /** Move o tiro na vertical de acordo com a sua velocidade. */
-fun Shot.move(): Shot = copy(y = y + speed)
+private fun Shot.move(): Shot = copy(y = y + speed)
 
 /** Verifica se o tiro saiu da área de jogo. */
-fun Shot.isOutOfBounds(areaHeight: Int): Boolean =
+private fun Shot.isOutOfBounds(areaHeight: Int): Boolean =
     y + height < 0 || y > areaHeight
 
 /** Verdadeiro se dois retângulos (x, y, largura, altura) se sobrepõem. */
-fun collides(x1: Int, y1: Int, w1: Int, h1: Int, x2: Int, y2: Int, w2: Int, h2: Int): Boolean =
+private fun collides(x1: Int, y1: Int, w1: Int, h1: Int, x2: Int, y2: Int, w2: Int, h2: Int): Boolean =
     x1 < x2 + w2 && x2 < x1 + w1 && y1 < y2 + h2 && y2 < y1 + h1
 
 
 /** Verdadeiro se dois tiros se tocam. */
-fun Shot.hits(other: Shot): Boolean =
+private fun Shot.hits(other: Shot): Boolean =
     collides(x, y, width, height, other.x, other.y, other.width, other.height)
 
 /** Verdadeiro se o tiro atinge o retângulo verde da nave. */

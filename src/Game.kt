@@ -2,7 +2,7 @@
 
 import pt.isel.canvas.*
 
-
+private const val ALIEN_SHOT_PROBABILITY = 50 // % de sucesso da tentativa de tiro dos aliens (valor entre 0 e 100)
 /** Estado do jogo: área, tiros dos aliens, nave e se acabou. */
 data class Game(
     val area: Area,

@@ -2,6 +2,16 @@
 
 import pt.isel.canvas.*
 
+private const val AREA_HEIGHT = 500
+
+private const val FIRE_KEY = ' '
+
+// Temporização
+const val MS_PER_SEC = 1000
+const val FRAMES_PER_SEC = 70
+const val FRAME_PERIOD = MS_PER_SEC / FRAMES_PER_SEC   // ~14 ms
+const val ALIEN_SHOT_PERIOD = 250
+
 // Representa as dimensões da área jogável do jogo.
 data class Area(val width: Int = AREA_WIDTH, val height: Int = AREA_HEIGHT)
 
