@@ -1,13 +1,3 @@
-/**
- * 13D
- *
- *Luiz Henrique Andreato Agostinelli 55507
- *Ângelo Santos 55466
- */
-
-
-
-
 
 /** Estado do jogo e funções que juntam a nave, os tiros e o desenho. */
 
