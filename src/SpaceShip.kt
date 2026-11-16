@@ -2,10 +2,12 @@
 
 import pt.isel.canvas.*
 
+//tamanho do canhão e local
 private const val CANNON_WIDTH = 4
 private const val CANNON_HEIGHT = 5
 private const val SHIP_CANNON_Y = SHIP_BASE_Y - CANNON_HEIGHT
 
+//velocidade do tiro da nave
 const val SHIP_SHOT_SPEED = 4
 
 // Movimentação da nave
